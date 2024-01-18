@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelScore = new System.Windows.Forms.Label();
             this.labelGameOver = new System.Windows.Forms.Label();
             this.Hero = new System.Windows.Forms.PictureBox();
             this.Food = new System.Windows.Forms.PictureBox();
             this.Enemy = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Hero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Food)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Enemy)).BeginInit();
@@ -109,6 +113,9 @@
         private System.Windows.Forms.PictureBox Hero;
         private System.Windows.Forms.PictureBox Food;
         private System.Windows.Forms.PictureBox Enemy;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 
