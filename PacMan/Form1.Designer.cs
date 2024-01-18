@@ -68,7 +68,7 @@
             // 
             // Food
             // 
-            this.Food.Location = new System.Drawing.Point(390, 200);
+            this.Food.Location = new System.Drawing.Point(357, 178);
             this.Food.Name = "Food";
             this.Food.Size = new System.Drawing.Size(100, 50);
             this.Food.TabIndex = 3;
