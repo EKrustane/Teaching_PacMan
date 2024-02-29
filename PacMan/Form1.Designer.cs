@@ -34,7 +34,7 @@
             this.Hero = new System.Windows.Forms.PictureBox();
             this.Food = new System.Windows.Forms.PictureBox();
             this.Enemy = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.TimerMove = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Hero)).BeginInit();
@@ -86,6 +86,11 @@
             this.Enemy.TabIndex = 4;
             this.Enemy.TabStop = false;
             // 
+            // TimerMove
+            // 
+            this.TimerMove.Interval = 10;
+            this.TimerMove.Tick += new System.EventHandler(this.TimerMove_Tick);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,6 +103,7 @@
             this.Controls.Add(this.labelScore);
             this.Name = "Game";
             this.Text = "PacMan";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.Hero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Food)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Enemy)).EndInit();
@@ -113,7 +119,7 @@
         private System.Windows.Forms.PictureBox Hero;
         private System.Windows.Forms.PictureBox Food;
         private System.Windows.Forms.PictureBox Enemy;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer TimerMove;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
     }
